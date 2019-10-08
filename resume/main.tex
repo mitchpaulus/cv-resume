@@ -1,0 +1,347 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\usepackage{ragged2e}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\namesection{Mitchell}{Paulus}{ \urlstyle{same}\url{http://debarghyadas.com} \\
+%\href{mailto:paulusm14@gmail.com}{paulusm14@gmail.com} | 262.483.9068
+%}
+
+
+\namesection{Mitchell T.}{Paulus}{ \href{mailto:paulusm14@gmail.com}{paulusm14@gmail.com} | 262.483.9068 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Texas A\&M University}
+\descript{Ph.D. in Mechanical Eng.}
+\location{December 2017 | College Station, TX \\ Cum. GPA: 4.0 / 4.0}
+\sectionsep
+
+
+\subsection{Milwaukee School of \newline Engineering}
+\descript{MS in Engineering}
+\location{Feb 2012 | Milwaukee, WI}
+\location{ Cum. GPA: 4.0 / 4.0 }
+\sectionsep
+
+\descript{BS in Mechanical Eng.}
+\location{Dec 2010 | Milwaukee, WI}
+\location{ Cum. GPA: 3.84 / 4.0 }
+%\subsection{La Martiniere for Boys}
+%\location{Grad. May 2011|  Kolkata, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/mitchpaulus}{\custombold{mitchpaulus}} \\
+LinkedIn:// \href{https://www.linkedin.com/in/mitchell-paulus/}{\custombold{mitchell-paulus}} \\
+YouTube://  \href{http://www.youtube.com/c/MitchellPaulus}{\custombold{MitchellPaulus}} \\
+Homepage:// \href{https://mitchellt.com}{\custombold{mitchellt.com}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+\location{Computer Programming:}
+C\#, shell, Matlab, Mathematica, VSTO and \newline VBA for Microsoft Office, Python
+\sectionsep
+
+\location{Building Simulation:}
+EnergyPlus, eQuest, Carrier's HAP, Inverse Modeling Toolkit, WinAM
+\sectionsep
+
+\location{Web Development:}
+Model-View-Controller Architecture, html/css/javascript, jQuery,
+knockout js, d3.js
+\sectionsep
+
+\location{Database Management:}
+SQL Server Management Studio
+\sectionsep
+
+\location{Solid Modeling:}
+ANSYS, Pro Engineer, SolidWorks/SolidEdge
+\sectionsep
+
+\location{Other:}
+version control in git and bazaar, \LaTeX, GIMP (image processing), Vim
+
+
+
+
+%\location{Over 5000 lines:}
+%Java \textbullet{}   Shell \textbullet{} JavaScript \textbullet{} Matlab \\
+%OCaml \textbullet{} Python \textbullet{} Rails \textbullet{} \LaTeX\ \\
+%\location{Over 1000 lines:}
+%C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+%\location{Familiar:}
+%AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Command Commissioning, LLC.}
+\descript{| Energy Engineer}
+\location{Sep 2017 -- Pres. |  Irving, TX}
+\sectionsep
+\begin{tightemize}
+\item Conduct remote assessments and develop energy efficiency measures for Continuous Commissioning\textsuperscript{\copyright{}}.
+\item Fault detection and diagnostics for existing building commissioning.
+\item Develop enhanced sequences of operation along with measurement and verification of energy efficiency savings.
+\end{tightemize}
+
+\vspace{0.1in}
+\runsubsection{Energy Systems Laboratory}
+
+\descript{Postdoctoral Research Associate}
+\location{Sep 2017 -- Pres. | College Station, TX}
+
+\descript{Graduate Assistant Researcher}
+\location{Sep 2012 -- Sep 2017 | College Station, TX}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Lead developer for CC-Compass (cc-compass.tamu.edu), a building automation system
+(BAS) data analysis web application. The web application is developed under the ASP.NET
+MVC 5 architecture, with C\# as the primary computational language. Currently manage
+data for 275,000+ sensors and over 11 billion data points.
+\item Develop algorithms for automated monitoring and verification of energy conservation projects and characterization of building component control sequences.
+	\item Conduct research concerning fault detection and diagnostic algorithms for commercial buildings, along with monitoring and verification procedures.
+\end{tightemize}
+\sectionsep
+
+
+% \runsubsection{Milwaukee School of Engineering}
+% \descript{| Research Assistant}
+% \location{Sep 2009 -- Feb 2012 | Milwaukee, WI}
+% \begin{tightemize}
+% \item Contracted through ASHRAE to complete research on the subject of short-term monitoring for long-term building energy prediction (RP-1404).
+% \item Developed hybrid linear change point  models and presented findings at semi-annual ASHRAE conferences.
+% \end{tightemize}
+% \sectionsep
+
+%\runsubsection{Phabricator}
+%\descript{| Open Source Contributor \& Team Leader}
+%\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+%\begin{tightemize}
+%\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+%\item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.
+%\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Selected Research}
+
+\custombold{Mitchell T. Paulus}. Algorithm for explicit solution to the three
+parameter linear change point regression model. \textit{Science and Technology
+for the Built Environment}. 2016.
+
+%Bass Abushakra and \custombold{Mitchell T. Paulus}. An hourly hybrid
+%multivariate change-point inverse model using short-term monitored data for
+%annual prediction of building energy performance, {Part I}: Background
+%({1404-RP}). Science and Technology for the Built Environment. 2016.
+
+%Bass Abushakra and \custombold{Mitchell T. Paulus}. An hourly hybrid
+%multivariate change-point inverse model using short-term monitored data for
+%annual prediction of building energy performance, {Part II}: Methodology
+%({1404-RP}). Science and Technology for the Built Environment. 2016.
+\sectionsep
+
+Bass Abushakra and \custombold{Mitchell T. Paulus}. An hourly hybrid
+multivariate change-point inverse model using short-term monitored data for
+annual prediction of building energy performance, {Part III}: Results and Analysis
+({1404-RP}). Science and Technology for the Built Environment. 2016.
+\sectionsep
+
+\custombold{Mitchell T. Paulus}, David E. Claridge, and Charles Culp. Algorithm
+for automating the selection of a temperature dependent change point model.
+Energy and Buildings (87). 2015.
+
+
+
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Head Undergrad Research}
+%\location{Jan 2014 – Present | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
+%\sectionsep
+
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+
+\begin{tabular}{rl}
+    2017 & Texas A\&M Graduate Teaching Fellow                   \\
+    2016 & ASHRAE Houston Scholarship                            \\
+    2015 & ASHRAE Houston Scholarship                            \\
+    2014 & ASHRAE Houston Scholarship                            \\
+    2010 & Fall MSOE Graduation Class Respondent (Valedictorian) \\
+    2009 & WFIC Ladish Co. Scholarship                           \\
+    2006 & Regal Scholarship                                     \\
+\end{tabular}
+
+
+
+
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership}
+\begin{tabular}{rll}
+    2015--2016 & President, Webmaster & TAMU ASHRAE Student Branch                     \\
+    2014--2016 & Member               & TAMU Mechanical Eng. Leadership Council \\
+    2014--2015 & Head Coach           & TAMU Men's Club Volleyball                     \\
+    2010--2011 & President            & MSOE ASHRAE Student Branch
+\end{tabular}
+
+
+%\section{Societies}
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}

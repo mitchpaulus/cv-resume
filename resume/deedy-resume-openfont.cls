@@ -18,9 +18,10 @@
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
 
+\isodate
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -34,8 +35,8 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm} % start everyth
-\newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\newcommand{\lastupdated}{\begin{textblock}{60}(160,0)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
 Last Updated on
 \today
 \end{textblock}}
@@ -44,11 +45,11 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{40pt}{10cm}\selectfont #1
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+	\centering{ \color{headings}\fontspec[Path = fonts/lato/]{Lato-LigIta}\fontsize{11pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{-15pt}
 }

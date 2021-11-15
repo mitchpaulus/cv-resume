@@ -1,0 +1,61 @@
+{
+    "education": [
+        {
+            "institution": "Texas A&M University",
+            "startYear": 2017,
+            "startMonth": 8,
+            "study": "Mechanical Engineering",
+            "degree": "Ph.D.",
+            "endYear": 2017,
+            "endMonth": 12,
+            "endDay": 16
+        },
+        {
+            "institution": "Milwaukee School of Engineering",
+            "startYear": 2010,
+            "startMonth": 8,
+            "study": "Engineering",
+            "degree": "Masters",
+            "endYear": 2012,
+            "endMonth": 5,
+            "endDay": 26
+        },
+        {
+            "institution": "Milwaukee School of Engineering",
+            "startYear": 2006,
+            "startMonth": 8,
+            "degree": "B.S.",
+            "study": "Mechanical Engineering",
+            "endYear": 2010,
+            "endMonth": 11,
+            "endDay": 20
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Building Energy Modeling Professional",
+            "effectiveYear": 2020,
+            "effectiveMonth": 8,
+            "effectiveDay": 5
+        },
+        {
+            "name": "Professional Engineer",
+            "effectiveYear": 2019,
+            "effectiveMonth": 8,
+            "effectiveDay": 2
+        }
+    ],
+    "experience": [
+        "employer": "Command Commissioning, LLC",
+        "startYear": 2017,
+        "startMonth":
+    ],
+    "presentations": [
+        {
+            "title": "Neobem: The programmers choice for EnergyPlus",
+            "date": "2021-11-04",
+            "occasion": "ASHRAE Student Branch Meeting"
+        }
+    ]
+}
+

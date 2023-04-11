@@ -24,9 +24,16 @@
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{setspace}
-\usepackage{bibentry}
-%%\usepackage{geometry}
-\nobibliography*
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+}
+% \usepackage[left=0.25in, right=0.5in, top=1in, bottom=1in]{geometry}
+% \nobibliography*
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 %\usepackage{palatino}
 %\usepackage[default,light,bold]{sourceserifpro}
@@ -89,11 +96,12 @@ Professional Engineer (Mechanical) \#135214, TX \hfill 2019
 
 \section{EXPERIENCE}
 
-{\textit{Energy Engineer} \hfill Sep 2017--Present} \\
+{\textit{Senior Energy Engineer} \hfill Sep 2017--Present} \\
 Command Commissioning, LLC, Irving, TX
 
 \begin{itemize}\itemsep -2pt % Reduce space between items
 \item Lead development of data-driven analytics in existing building commissioning and Continuous Commissioning\textsuperscript{\textregistered{}}.
+\item Deploy SpySpark installations and develop analytics and dashboards.
 \item Develop enhanced sequences of operation along with measurement and verification of energy efficiency savings.
 \item Develop whole building energy models for savings estimation and monitoring and verification of savings.
 \item Conduct remote assessments and develop energy efficiency measures for Continuous Commissioning\textsuperscript{\copyright{}}.
@@ -105,8 +113,7 @@ Command Commissioning, LLC, Irving, TX
 Energy Systems Laboratory, College Station, TX
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Lead software developer for Compass (cc-compass.tamu.edu), a building automation system (BAS) data
-          analytics web application. Manage data for 700,000+ sensors and billions of data points.
+    \item Lead software developer for Compass (cc-compass.tamu.edu), a building automation system (BAS) data analytics web application. Manage data for 800,000+ sensors and billions of data points.
     \item Manage and train Graduate Assistant Researchers and student workers.
     \item Develop algorithms for automated monitoring and verification of energy conservation projects and characterization of building component control sequences.
 \end{itemize}
@@ -120,31 +127,38 @@ Milwaukee School of Engineering, Milwaukee, WI
 \item Completed model development and presented findings at semi-annual ASHRAE conferences.
 \end{itemize}
 
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 
 \section{PUBLICATIONS}
 {\sl \textbf{Peer-Reviewed Journal Articles}}
 
-\bibentry{Paulus2017}
+\textbf{Mitchell T. Paulus}. Algorithm for explicit solution to the three parameter linear change point regression model.
+\textit{Science and Technology for the Built Environment}, 2016. \href{https://doi.org/10.1080/23744731.2016.1267998}{10.1080/23744731.2016.1267998}.
 
-\bibentry{Paulus2016c}
+Bass Abushakra and \textbf{Mitchell T. Paulus}.
+An hourly hybrid multivariate change point inverse model using short-term monitored data for annual prediction of building energy performance, {Part III: Results and Analysis (1404-RP)}.
+\textit{Science and Technology for the Built Environment}, 2016. \doi{10.1080/23744731.2016.1215659}.
 
-\bibentry{Paulus2016b}
+Bass Abushakra and \textbf{Mitchell T. Paulus}.
+An hourly hybrid multivariate change point inverse model using short-term monitored data for annual prediction of building energy performance, {Part II: Methodology (1404-RP)}.
+\textit{Science and Technology for the Built Environment}, 2016. \doi{10.1080/23744731.2016.1215199}.
 
-\bibentry{Paulus2016a}
+Bass Abushakra and \textbf{Mitchell T. Paulus}.
+An hourly hybrid multivariate change point inverse model using short-term monitored data for annual prediction of building energy performance, {Part I: Background (1404-RP)}.
+\textit{Science and Technology for the Built Environment}, 2016. \doi{10.1080/23744731.2016.1215222}.
 
-\bibentry{Paulus2015AlgorithmModel}
+\textbf{Mitchell T. Paulus}, David E. Claridge, and Charles Culp. Algorithm for automating the selection of a temperature dependent change point model.
+\textit{Energy and buildings}, 2015. \href{https://doi.org/10.1016/j.enbuild.2014.11.033}{10.1016/j.enbuild.2014.11.033}.
 
-\bibentry{Gangisetti2015}
-
-%\bibentry{Paulus2012}
-
+Kavita Gangisetti, David E. Claridge, Jelena Srebric, and \textbf{Mitchell T. Paulus}. Influence of reduced {VAV} flow settings on indoor thermal comfort in an office space.
+\textit{Building Simulation}, 2015. \href{https://doi.org/10.1007/s12273-015-0254-3}{10.1007/s12273-015-0254-3}.
 
 {\sl \textbf{Book Chapters}}
 
-Jan L.M. Hensen and Roberto Lamberts. \textit{Building Performance Simulation
-for Design and Operation, Expanded Second Edition}. David E. Claridge
-and \textbf{Mitchell T. Paulus}. Chapter 13: \textit{Building Simulation
-for Practical Operational Optimization}.
+Jan L.M. Hensen and Roberto Lamberts. \textit{Building Performance Simulation for Design and Operation, Expanded Second Edition}.
+\href{https://doi.org/10.1201/9780429402296}{10.1201/9780429402296}.
+David E. Claridge and \textbf{Mitchell T. Paulus}. Chapter 13: \textit{Building Simulation for Practical Operational Optimization}.
+
 
 % David Strong and Victoria Burrows. \textit{A Whole-System Approach to High-Performance Green Buildings}. David E. Claridge, \textbf{Mitchell T. Paulus}, Charles Culp, and Kevin Christman, Chapter: \textit{Continuous Commissioning\textsuperscript{\textregistered{}}}, 2016
 
@@ -212,22 +226,22 @@ Head Coach, Texas A\&M Men's Club Volleyball \hfill 2014--2015\
 President, MSOE ASHRAE Student Branch \hfill 2010--2011
 
 \section{AWARDS}
-Texas A\&M Graduate Teaching Fellow, 2017
+Texas A\&M Graduate Teaching Fellow \hfill 2017
 
-Fall MSOE Graduation Class Respondent (Valedictorian), 2010
+Fall MSOE Graduation Class Respondent \hfill 2010
 
-ASHRAE Houston Scholarship, 2014, 2015, 2016
+ASHRAE Houston Scholarship \hfill 2014, 2015, 2016
 
-WFIC Ladish Co. Scholarship, 2009
+WFIC Ladish Co. Scholarship \hfill 2009
 
-Regal Scholarship, 2006
+Regal Scholarship \hfill 2006
 
 \section{SOFTWARE}
 
 Computer Programming: \parbox[t]{9cm}{C\#, JavaScript/TypeScript, Python, awk, shell, Matlab, SQL, Mathematica, VBA for Microsoft Office}
 
-Building Simulation: \parbox[t]{10cm}{EnergyPlus, eQuest, Carrier's
-HAP, WinAM, Inverse Modeling Toolkit }
+Building Simulation: \parbox[t]{10cm}{EnergyPlus/OpenStudio, eQuest, Carrier's
+HAP, WinAM, Inverse Modeling Toolkit}
 
 Web Development: \parbox[t]{10cm}{Model-View-Controller Architecture,
 html/css/javascript, jQuery, knockout.js, d3.js}
@@ -236,11 +250,11 @@ Database Management: SQL Server Management Studio
 
 Solid Modeling: ANSYS, Pro Engineer, SolidWorks/SolidEdge
 
-Other: Version control in Git and bazaar, make, redo, ANTLR, \LaTeX, GIMP (image processing), Vim
+Other: SkySpark/axon, Git, bazaar, make, redo, ANTLR, \LaTeX, GIMP, Vim
 
 \section{PROFESSIONAL SOCIETIES}
 
-\parbox[t]{9cm}{American Society of Heating, Refrigerating, and Air-Conditioning Engineers (ASHRAE)} \hfill \parbox[t]{3cm}{\raggedleft Stu. Member \\ 2011--Pres.}
+\parbox[t]{9cm}{American Society of Heating, Refrigerating, and Air-Conditioning Engineers (ASHRAE)} \hfill \parbox[t]{3cm}{\raggedleft  Assoc. Member \\ 2011--Pres.}
 
 \parbox[t]{9cm}{ASHRAE Technical Committee 4.7, Energy Calculations }\hfill \parbox[t]{3cm}{\raggedleft Corres. Member \\ 2015--Pres.}
 
@@ -264,19 +278,19 @@ Data-driven building energy modeling
 
 \section{REVIEWING}
 
-Energy
+\href{https://www.sciencedirect.com/journal/energy}{Energy}
 
-Energy and Buildings
+\href{https://www.sciencedirect.com/journal/energy-and-buildings}{Energy and Buildings}
 
 %% Science and Technology for the Built Environment
 
-Journal of Building Performance Simulation
+\href{https://www.tandfonline.com/journals/tbps20}{Journal of Building Performance Simulation}
 
-Building Simulation
+\href{https://www.springer.com/journal/12273}{Building Simulation}
 
 ASHRAE Conference Papers
 
 \end{resume}
-\bibliographystyle{plain}
-\nobibliography{Thesis}
+% \bibliographystyle{plain}
+% \nobibliography{Thesis}
 \end{document}

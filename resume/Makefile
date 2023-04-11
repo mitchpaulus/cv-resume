@@ -9,4 +9,3 @@ $(name).pdf : $(name).tex deedy-resume-openfont.cls
 .PHONY : clean
 clean :
 	rm -rf *.aux *.blg *.pdf *.log *.bbl *.out
-
